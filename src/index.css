@@ -10,6 +10,11 @@ body,
   font-family: "Source Sans Pro", sans-serif;
 }
 
+ul,
+li {
+  list-style: none;
+}
+
 .app {
   display: flex;
   position: relative;

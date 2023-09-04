@@ -1,14 +1,13 @@
 import { Box } from "@mui/material";
 import { DataGrid, GridToolbar } from "@mui/x-data-grid";
-import { tokens } from "../../theme";
-import { mockDataContacts } from "../../data/mockData";
-import Header from "../../components/Header";
+import { tokens } from "../theme";
+import { mockDataContacts } from "../data/mockData";
 import { useTheme } from "@mui/material";
+// import Header from "../scenes/Header";
 
-const Contacts = () => {
+const PatientTable = () => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
-
   const columns = [
     { field: "id", headerName: "ID", flex: 0.5 },
     { field: "registrarId", headerName: "Registrar ID" },
@@ -26,41 +25,41 @@ const Contacts = () => {
       align: "left",
     },
     {
-      field: "phone",
-      headerName: "Phone Number",
+      field: "side",
+      headerName: "Side",
       flex: 1,
     },
     {
-      field: "email",
-      headerName: "Email",
+      field: "target",
+      headerName: "Target",
       flex: 1,
     },
     {
-      field: "address",
-      headerName: "Address",
+      field: "startTherapy",
+      headerName: "Start Therapy",
       flex: 1,
     },
     {
-      field: "city",
-      headerName: "City",
+      field: "numberTherapy",
+      headerName: "N. Therapy",
       flex: 1,
     },
     {
-      field: "zipCode",
-      headerName: "Zip Code",
+      field: "endTherapy",
+      headerName: "End Therapy",
       flex: 1,
     },
   ];
 
   return (
-    <Box m="20px">
-      <Header
-        title="CONTACTS"
-        subtitle="List of Contacts for Future Reference"
-      />
+    <Box
+    //   m="20px"
+    >
+      {/* <Header title="Patients table" /> */}
       <Box
-        m="40px 0 0 0"
-        height="75vh"
+        p="10px"
+        width="800px"
+        height="440px"
         sx={{
           "& .MuiDataGrid-root": {
             border: "none",
@@ -91,6 +90,7 @@ const Contacts = () => {
         }}
       >
         <DataGrid
+          checkboxSelection
           rows={mockDataContacts}
           columns={columns}
           components={{ Toolbar: GridToolbar }}
@@ -100,4 +100,4 @@ const Contacts = () => {
   );
 };
 
-export default Contacts;
+export default PatientTable;
