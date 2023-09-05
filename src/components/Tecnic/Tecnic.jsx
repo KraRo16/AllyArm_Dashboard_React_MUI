@@ -10,7 +10,7 @@ const Tecnic = () => {
   const colors = tokens(theme.palette.mode);
 
   return (
-    <Box m="20px">
+    <Box m="20px" height="88%">
       <Header title="Tecnic" subtitle="Diagnostics" />
 
       <Box
@@ -25,13 +25,13 @@ const Tecnic = () => {
         display="flex"
         width="100%"
         justifyContent="space-between"
-        height="390px"
+        height="46%"
       >
         <Box
           backgroundColor={colors.primary[400]}
           mt="10px"
           mr="10px"
-          width="70%"
+          width="90%"
           display="flex"
           alignItems="center"
           justifyContent="center"

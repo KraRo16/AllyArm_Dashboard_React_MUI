@@ -9,12 +9,12 @@ const Form = () => {
   };
 
   return (
-    <Box m="20px" width="90%" height="480px">
+    <Box m="20px" width="90%">
       {/* <Header title="CRUD USER" /> */}
       <Formik
         onSubmit={handleFormSubmit}
         initialValues={initialValues}
-        validationSchema={checkoutSchema}
+        // validationSchema={checkoutSchema}
       >
         {({
           values,
@@ -25,7 +25,7 @@ const Form = () => {
           handleSubmit,
         }) => (
           <form onSubmit={handleSubmit}>
-            <Box display="flex" flexDirection="column" alignItems="" pb="10px">
+            <Box display="flex" flexDirection="column" alignItems="" pb="10px" mb="20px">
               <TextField
                 fullWidth
                 variant="filled"
@@ -37,7 +37,7 @@ const Form = () => {
                 name="name"
                 error={!!touched.name && !!errors.name}
                 helperText={touched.name && errors.name}
-                // sx={{ mb: "20px" }}
+                sx={{ mb: "20px" }}
               />
               <TextField
                 fullWidth
@@ -50,7 +50,7 @@ const Form = () => {
                 name="age"
                 error={!!touched.age && !!errors.age}
                 helperText={touched.age && errors.age}
-                // sx={{ mb: "20px" }}
+                sx={{ mb: "20px" }}
               />
               <TextField
                 fullWidth
@@ -63,7 +63,7 @@ const Form = () => {
                 name="side"
                 error={!!touched.side && !!errors.side}
                 helperText={touched.side && errors.side}
-                // sx={{ mb: "20px" }}
+                sx={{ mb: "20px" }}
               />
               <TextField
                 fullWidth
@@ -76,7 +76,7 @@ const Form = () => {
                 name="target"
                 error={!!touched.target && !!errors.target}
                 helperText={touched.target && errors.target}
-                // sx={{ mb: "20px" }}
+                sx={{ mb: "20px" }}
               />
               <TextField
                 fullWidth
@@ -89,7 +89,7 @@ const Form = () => {
                 name="startTherapy"
                 error={!!touched.startTherapy && !!errors.startTherapy}
                 helperText={touched.startTherapy && errors.startTherapy}
-                // sx={{ mb: "20px" }}
+                sx={{ mb: "20px" }}
               />
               <TextField
                 fullWidth
@@ -102,7 +102,7 @@ const Form = () => {
                 name="nTherapy"
                 error={!!touched.nTherapy && !!errors.nTherapy}
                 helperText={touched.nTherapy && errors.nTherapy}
-                // sx={{ mb: "20px" }}
+                sx={{ mb: "20px" }}
               />
               <TextField
                 fullWidth
@@ -115,18 +115,18 @@ const Form = () => {
                 name="endTherapy"
                 error={!!touched.endTherapy && !!errors.endTherapy}
                 helperText={touched.endTherapy && errors.endTherapy}
-                // sx={{ mb: "20px" }}
+                sx={{ mb: "20px" }}
               />
             </Box>
             <Box display="flex" justifyContent="space-between" mt="20px">
               <Button type="submit" color="secondary" variant="contained">
-                Add User
+                Add
               </Button>
               <Button type="submit" color="secondary" variant="contained">
-                Edit User
+                Edit
               </Button>
               <Button type="submit" color="secondary" variant="contained">
-                Delete User
+                Delete
               </Button>
             </Box>
           </form>
@@ -136,15 +136,15 @@ const Form = () => {
   );
 };
 
-const checkoutSchema = yup.object().shape({
-  name: yup.string().required("Required"),
-  age: yup.number().required("Required"),
-  side: yup.string().required("Required"),
-  target: yup.string().required("Required"),
-  startTherapy: yup.date().required("Required"),
-  nTherapy: yup.number().required("Required"),
-  endTherapy: yup.date().required("Required"),
-});
+// const checkoutSchema = yup.object().shape({
+//   name: yup.string().required("Required"),
+//   age: yup.number().required("Required"),
+//   side: yup.string().required("Required"),
+//   target: yup.string().required("Required"),
+//   startTherapy: yup.date().required("Required"),
+//   nTherapy: yup.number().required("Required"),
+//   endTherapy: yup.date().required("Required"),
+// });
 
 const initialValues = {
   name: "",

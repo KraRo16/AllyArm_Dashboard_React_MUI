@@ -18,19 +18,18 @@ const Dashboard = () => {
   const colors = tokens(theme.palette.mode);
 
   return (
-    <Box m="20px">
+    <Box m="20px" height="88%">
       {/* HEADER */}
       <Box display="flex" justifyContent="space-between" alignItems="center">
         <Header title="DASHBOARD" subtitle="Welcome to your dashboard" />
       </Box>
       {/* GRID & CHARTS */}
-      <Box display="flex" alignItems="start">
-        <Box display="flex" alignItems="center" flexDirection="column">
+      <Box display="flex" alignItems="start" height="94%">
+        <Box display="flex" alignItems="center" flexDirection="column" height="100%" width="100%">
           <Box
-            //   gridColumn="span 3"
             backgroundColor={colors.primary[400]}
-            width="800px"
-            height="440px"
+            width="100%"
+            height="90%"
             display="flex"
             alignItems="center"
             justifyContent="center"
@@ -105,12 +104,13 @@ const Dashboard = () => {
           display="flex"
           alignItems="center"
           flexDirection="column"
-          width="90%"
+          width="25%"
+          height="100%"
         >
           <Box
             backgroundColor={colors.primary[400]}
             width="90%"
-            height="500px"
+            height="90%"
             display="flex"
             alignItems="center"
             justifyContent="center"

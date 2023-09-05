@@ -55,10 +55,10 @@ const Calendar = () => {
   };
 
   return (
-    <Box m="20px">
+    <Box m="20px" height="89%">
       <Header title="Calendar" subtitle="Full Calendar Interactive Page" />
 
-      <Box display="flex" justifyContent="space-between">
+      <Box display="flex" justifyContent="space-between" height="92%">
         {/* CALENDAR SIDEBAR */}
         <Box
           flex="1 1 20%"
@@ -91,7 +91,7 @@ const Calendar = () => {
         {/* CALENDAR */}
         <Box ml="15px" width="887px">
           <FullCalendar
-            height="75vh"
+            height="80vh"
             plugins={[
               dayGridPlugin,
               timeGridPlugin,

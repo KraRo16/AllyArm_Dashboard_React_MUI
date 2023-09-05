@@ -8,19 +8,18 @@ const Setting = () => {
   const colors = tokens(theme.palette.mode);
 
   return (
-    <Box m="20px">
-      <Header title="Setting" />
+    <Box m="20px" height="88%">
+      <Header title="Setting" subtitle="Exo setting"/>
       <Box
         backgroundColor={colors.primary[400]}
         width="100%"
-        height="300px"
+        height="44%"
         display="flex"
         justifyContent="space-between"
         mb="10px"
       >
         <Box
           width="100%"
-          height="300px"
           display="flex"
           flexDirection="column"
           p="0 20px"
@@ -38,7 +37,6 @@ const Setting = () => {
         </Box>
         <Box
           width="100%"
-          height="300px"
           display="flex"
           flexDirection="column"
           p="0 20px"
@@ -56,7 +54,6 @@ const Setting = () => {
         </Box>
         <Box
           width="100%"
-          height="300px"
           display="flex"
           flexDirection="column"
           p="0 20px"
@@ -74,7 +71,6 @@ const Setting = () => {
         </Box>
         <Box
           width="100%"
-          height="300px"
           display="flex"
           flexDirection="column"
           p="0 20px"
@@ -94,7 +90,7 @@ const Setting = () => {
       <Box
         backgroundColor={colors.primary[400]}
         width="100%"
-        height="330px"
+        height="48%"
         display="flex"
         justifyContent="space-between"
       >

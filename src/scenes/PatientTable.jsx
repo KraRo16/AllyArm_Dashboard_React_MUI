@@ -53,13 +53,15 @@ const PatientTable = () => {
 
   return (
     <Box
+    width="98%"
+    height="98%"
     //   m="20px"
     >
       {/* <Header title="Patients table" /> */}
       <Box
         p="10px"
-        width="800px"
-        height="440px"
+        // width="800px"
+        height="100%"
         sx={{
           "& .MuiDataGrid-root": {
             border: "none",
