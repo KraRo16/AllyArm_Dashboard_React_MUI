@@ -62,6 +62,7 @@ export const tokens = (mode) => ({
         },
         personal: {
           100: "#251f40",
+          200: "#e59400"
         },
       }
     : {
@@ -122,6 +123,7 @@ export const tokens = (mode) => ({
         },
         personal: {
           100: "#251f40",
+          200: "#e59400"
         },
       }),
 });

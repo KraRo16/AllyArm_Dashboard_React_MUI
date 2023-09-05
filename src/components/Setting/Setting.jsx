@@ -84,7 +84,7 @@ const Setting = () => {
           >
             Wearing Free Position
           </Typography>
-          <SliderBox title={"Axis"} />
+          
         </Box>
       </Box>
       <Box
