@@ -1,8 +1,7 @@
-import { Box } from "@mui/material";
+import { Box, useTheme } from "@mui/material";
 import { DataGrid, GridToolbar } from "@mui/x-data-grid";
 import { tokens } from "../theme";
 import { mockDataContacts } from "../data/mockData";
-import { useTheme } from "@mui/material";
 // import Header from "../scenes/Header";
 
 const PatientTable = () => {

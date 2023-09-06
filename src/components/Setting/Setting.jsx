@@ -2,6 +2,7 @@ import { Typography, Box, useTheme } from "@mui/material";
 import Header from "../../scenes/Header";
 import { tokens } from "../../theme";
 import SliderBox from "../../scenes/SliderBox";
+import WearingFreePosBox from "../../scenes/WearingFreePosBox"
 
 const Setting = () => {
   const theme = useTheme();
@@ -28,7 +29,7 @@ const Setting = () => {
             display="flex"
             justifyContent="center"
             variant="h4"
-            width="96%"
+            width="100%"
             sx={{ color: colors.greenAccent[500] }}
           >
             Axis Speed
@@ -45,7 +46,7 @@ const Setting = () => {
             display="flex"
             justifyContent="center"
             variant="h4"
-            width="96%"
+            width="100%"
             sx={{ color: colors.greenAccent[500] }}
           >
             Axis Speed Advance
@@ -62,14 +63,14 @@ const Setting = () => {
             display="flex"
             justifyContent="center"
             variant="h4"
-            width="96%"
+            width="100%"
             sx={{ color: colors.greenAccent[500] }}
           >
             Joy Sensitivity
           </Typography>
           <SliderBox title={"Axis"} />
         </Box>
-        <Box
+        {/* <Box
           width="100%"
           display="flex"
           flexDirection="column"
@@ -79,13 +80,13 @@ const Setting = () => {
             display="flex"
             justifyContent="center"
             variant="h4"
-            width="96%"
+            width="100%"
             sx={{ color: colors.greenAccent[500] }}
           >
             Wearing Free Position
           </Typography>
-          
-        </Box>
+          <WearingFreePosBox />
+        </Box> */}
       </Box>
       <Box
         backgroundColor={colors.primary[400]}
@@ -105,7 +106,7 @@ const Setting = () => {
             display="flex"
             justifyContent="center"
             variant="h4"
-            width="96%"
+            width="100%"
             sx={{ color: colors.greenAccent[500] }}
           >
             ROM
@@ -123,11 +124,12 @@ const Setting = () => {
             display="flex"
             justifyContent="center"
             variant="h4"
-            width="96%"
+            width="100%"
             sx={{ color: colors.greenAccent[500] }}
           >
-            Setting Exercises
+            Wearing Free Position
           </Typography>
+          <WearingFreePosBox />
         </Box>
       </Box>
     </Box>

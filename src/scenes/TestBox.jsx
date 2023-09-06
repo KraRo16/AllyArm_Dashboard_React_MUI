@@ -1,12 +1,4 @@
-import {
-  Typography,
-  Box,
-  useTheme,
-  List,
-  ListItem,
-  Button,
-  ButtonGroup,
-} from "@mui/material";
+import { Typography, Box, useTheme, Button } from "@mui/material";
 import { tokens } from "../theme";
 // import { testBtn } from "../data/testData";
 
@@ -16,12 +8,7 @@ const TestBox = () => {
 
   return (
     <Box>
-      <Box
-        display="flex"
-        justifyContent="space-between"
-        flexWrap="nowrap"
-        mb="20px"
-      >
+      <Box display="flex" justifyContent="space-between" flexWrap="nowrap" mb="20px">
         <Typography variant="h1" sx={{ color: colors.greenAccent[500] }}>
           TEST MODE
         </Typography>

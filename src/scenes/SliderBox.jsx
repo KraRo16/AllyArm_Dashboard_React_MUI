@@ -7,9 +7,6 @@ const SliderSection = () => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
 
-  // Создаем состояние для хранения значений слайдеров
-  const [sliderValues, setSliderValues] = useState([20]);
-
   const [axisValue1, setAxisValue1] = useState(5);
   const [axisValue2, setAxisValue2] = useState(5);
   const [axisValue3, setAxisValue3] = useState(5);
@@ -17,7 +14,7 @@ const SliderSection = () => {
   const [axisValue5, setAxisValue5] = useState(5);
   const [isLocked, setIsLocked] = useState(false);
   const [isLockerPressed, setIsLockerPressed] = useState(false);
-  const [data, setData] = useState({});
+  const [data] = useState({});
   const [sliderChanged, setSliderChanged] = useState(false);
 
   useEffect(() => {
