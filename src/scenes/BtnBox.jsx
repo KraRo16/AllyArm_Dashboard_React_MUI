@@ -12,7 +12,7 @@ const BtnBox = ({ subtitle }) => {
           {subtitle}
         </Typography>
       </Box>
-      <Button type="submit" color="secondary" variant="contained">
+      <Button type="submit" color="secondary" variant="contained" sx={{ fontWeight: "600"}}>
         START
       </Button>
     </Box>

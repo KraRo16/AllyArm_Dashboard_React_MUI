@@ -1,0 +1,21 @@
+
+[{
+"id_button": 1,
+"description_button": "Ciclo movimenti standard"
+},
+{
+"id_button": 3,
+"description_button": "Ciclo movimenti cartesiani"
+},
+{
+"id_button": 4,
+"description_button": "Driver off"
+},
+{
+"id_button": 7,
+"description_button": "Test Mouse 3D Asse 1"
+},
+{
+"id_button": 8,
+"description_button": "Test JOG"
+}]
